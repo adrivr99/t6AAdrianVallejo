@@ -25,7 +25,7 @@ public class Lateral extends Defensa{
         this.actitud = "Ofensivo";
     }
 
-    public Lateral(int peso, int altura, int velocidadPuntaMaxima, String actitud, String nombre, String apellidos, LocalDate fechaNacimiento, int dorsal, boolean titular) {
+    public Lateral(String nombre, String apellidos, LocalDate fechaNacimiento, int dorsal, boolean titular, int peso, int altura, int velocidadPuntaMaxima, String actitud) {
         super(nombre, apellidos, fechaNacimiento, dorsal, titular);
         this.peso = peso;
         this.altura = altura;
