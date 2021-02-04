@@ -92,4 +92,8 @@ public class Central extends Defensa{
         super.entrenamiento();
         System.out.println("Posicionamiento");
     }
+    
+     public int mejorarVelocidad() {
+        return this.velocidadPuntaMaxima;
+    }
 }
