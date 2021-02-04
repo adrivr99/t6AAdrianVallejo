@@ -64,23 +64,11 @@ public class Central extends Defensa{
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
+    public boolean equals(Object objeto) {
+        if (!super.equals(objeto)) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Central other = (Central) obj;
-        if (this.peso != other.peso) {
-            return false;
-        }
-        if (this.altura != other.altura) {
-            return false;
-        }
+        final Central other = (Central) objeto;
         if (this.velocidadPuntaMaxima != other.velocidadPuntaMaxima) {
             return false;
         }

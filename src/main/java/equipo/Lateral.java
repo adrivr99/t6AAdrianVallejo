@@ -76,27 +76,12 @@ public class Lateral extends Defensa{
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
+    public boolean equals(Object objeto) {
+        if (!super.equals(objeto)) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Lateral other = (Lateral) obj;
-        if (this.peso != other.peso) {
-            return false;
-        }
-        if (this.altura != other.altura) {
-            return false;
-        }
+        final Lateral other = (Lateral) objeto;
         if (this.velocidadPuntaMaxima != other.velocidadPuntaMaxima) {
-            return false;
-        }
-        if (!Objects.equals(this.actitud, other.actitud)) {
             return false;
         }
         return true;
