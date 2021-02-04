@@ -88,13 +88,8 @@ public class Central extends Defensa{
     }
 
     @Override
-    public String toString() {
-        return "Central " + "Peso = " + peso + ",Altura=" + altura + ", Velocidad Punta Maxima = " + velocidadPuntaMaxima;
+    public void entrenamiento() {
+        super.entrenamiento();
+        System.out.println("Posicionamiento");
     }
-    
-    
-    
-    
-    
-    
 }

@@ -103,9 +103,9 @@ public class Lateral extends Defensa{
     }
 
     @Override
-    public String toString() {
-        return "Lateral " + "Peso = " + peso + ", Altura = " + altura + ", Velocidad Punta Maxima = " + velocidadPuntaMaxima + ", Actitud = " + actitud;
+    public void entrenamiento() {
+        super.entrenamiento();
+        System.out.println("Centros en largo");
     }
-    
     
 }

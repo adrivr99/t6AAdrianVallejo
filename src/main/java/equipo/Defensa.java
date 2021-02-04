@@ -73,11 +73,9 @@ public class Defensa extends Futbolista{
     }
 
     @Override
-    public String toString() {
-        return "Defensa: " + "Dorsal = " + dorsal + ", Titular = " + titular;
+    public void entrenamiento() {
+        super.entrenamiento();
+        System.out.println("Trabajo defensivo");
     }
-    
-    
-    
-    
+        
 }
