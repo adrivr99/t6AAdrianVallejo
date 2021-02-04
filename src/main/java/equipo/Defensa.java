@@ -78,8 +78,11 @@ public class Defensa extends Futbolista{
         System.out.println("Trabajo defensivo");
     }
     
-     public boolean alineacion() {
+    public boolean alineacion() {
         return this.titular;
     }
-        
+    
+    public int cambiarDorsal(){
+        return this.dorsal;
+    }
 }
