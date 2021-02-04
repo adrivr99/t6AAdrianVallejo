@@ -108,4 +108,8 @@ public class Lateral extends Defensa{
         System.out.println("Centros en largo");
     }
     
+     public String cambiarActitud() {
+        return this.actitud;
+    }
+    
 }
