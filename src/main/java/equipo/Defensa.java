@@ -5,10 +5,79 @@
  */
 package equipo;
 
+import java.time.LocalDate;
+import java.util.Objects;
 /**
  *
  * @author adriv
  */
-public class Defensa {
+public class Defensa extends Futbolista{
+    private int dorsal;
+    private boolean titular;
+
+    public Defensa() {
+        super();
+        this.dorsal = 4;
+        this.titular = true;
+    }
+
+    public Defensa(int dorsal, boolean titular, String nombre, String apellidos, LocalDate fechaNacimiento) {
+        super(nombre, apellidos, fechaNacimiento);
+        this.dorsal = dorsal;
+        this.titular = titular;
+    }
+
+    public int getDorsal() {
+        return dorsal;
+    }
+
+    public void setDorsal(int dorsal) {
+        this.dorsal = dorsal;
+    }
+
+    public boolean isTitular() {
+        return titular;
+    }
+
+    public void setTitular(boolean titular) {
+        this.titular = titular;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 71 * hash + this.dorsal;
+        hash = 71 * hash + (this.titular ? 1 : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Defensa other = (Defensa) obj;
+        if (this.dorsal != other.dorsal) {
+            return false;
+        }
+        if (this.titular != other.titular) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Defensa: " + "Dorsal = " + dorsal + ", Titular = " + titular;
+    }
+    
+    
+    
     
 }
