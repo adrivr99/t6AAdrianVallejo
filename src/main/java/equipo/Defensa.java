@@ -21,7 +21,7 @@ public class Defensa extends Futbolista{
         this.titular = true;
     }
 
-    public Defensa(int dorsal, boolean titular, String nombre, String apellidos, LocalDate fechaNacimiento) {
+    public Defensa(String nombre, String apellidos, LocalDate fechaNacimiento, int dorsal, boolean titular ) {
         super(nombre, apellidos, fechaNacimiento);
         this.dorsal = dorsal;
         this.titular = titular;
