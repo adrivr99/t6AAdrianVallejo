@@ -97,4 +97,9 @@ public class Lateral extends Defensa{
         return this.actitud;
     }
     
+     @Override
+    public int cambiarDorsal(){
+        return this.getDorsal();
+    }
+     
 }

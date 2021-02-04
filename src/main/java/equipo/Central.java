@@ -84,4 +84,9 @@ public class Central extends Defensa{
      public int mejorarVelocidad() {
         return this.velocidadPuntaMaxima;
     }
+     
+    @Override
+    public int cambiarDorsal(){
+        return this.getDorsal();
+    }
 }
