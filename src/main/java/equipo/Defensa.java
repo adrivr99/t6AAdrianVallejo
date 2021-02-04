@@ -77,5 +77,9 @@ public class Defensa extends Futbolista{
         super.entrenamiento();
         System.out.println("Trabajo defensivo");
     }
+    
+     public boolean alineacion() {
+        return this.titular;
+    }
         
 }
