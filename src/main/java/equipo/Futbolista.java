@@ -15,6 +15,7 @@ public class Futbolista {
     private String nombre;
     private String apellidos;
     private LocalDate fechaNacimiento;
+    private boolean entrenar;
 
     public Futbolista() {
         this.nombre = "Adrian";
@@ -51,6 +52,16 @@ public class Futbolista {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public boolean isEntrenar() {
+        return entrenar;
+    }
+
+    public void setEntrenar(boolean entrenar) {
+        this.entrenar = entrenar;
+    }
+    
+    
 
     @Override
     public int hashCode() {
@@ -90,7 +101,9 @@ public class Futbolista {
         return "Futbolista:" + "Nombre = " + nombre + ", Apellidos = " + apellidos + ", Fecha de nacimiento = " + fechaNacimiento;
     }
     
-    
-    
+    public void entrenamiento() {
+        this.entrenar = true;
+        System.out.println("Comienza el entrenamiento");
+    }
     
 }
